@@ -128,7 +128,7 @@
       ]
     },
     {
-      "description": "Left Control + Right Click -> Spacebar",
+      "description": "Left Control + Right Click -> Spacebar (Full-size Preview on Mission Control)",
       "manipulators": [
         {
           "type": "basic",
