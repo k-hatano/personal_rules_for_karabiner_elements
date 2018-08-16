@@ -1,0 +1,57 @@
+{
+  "title": "Personal_rules",
+  "rules": [
+    {
+      "description": "Right Command + Left Click -> Middle Click",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "pointing_button": "button1",
+            "modifiers": {
+              "mandatory": [
+                "right_command"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "pointing_button": "button3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Right Command + Middle Click -> Command + Control + D",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "pointing_button": "button3",
+            "modifiers": {
+              "mandatory": [
+                "right_command"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "d",
+              "modifiers": [
+                "left_command",
+                "left_control"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
