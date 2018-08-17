@@ -151,30 +151,6 @@
       ]
     },
     {
-      "description": "Left Control + Right Click -> Spacebar (Full-size Preview on Mission Control)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "pointing_button": "button2",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "spacebar"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "Left Control + Mouse Button 4, 5 -> Switch Desktop",
       "manipulators": [
         {
