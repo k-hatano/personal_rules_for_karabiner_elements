@@ -35,9 +35,6 @@
             "modifiers": {
               "mandatory": [
                 "right_command"
-              ],
-              "optional": [
-                "any"
               ]
             }
           },
@@ -125,6 +122,32 @@
               "modifiers": [
                 "left_control",
                 "left_shift"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Right Command only -> Move focus to the menu bar",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_command"
+          },
+          "to": [
+              {
+                  "key_code": "right_command",
+                  "lazy": true
+              }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "f2",
+              "modifiers": [
+                "left_control",
+                "fn"
               ]
             }
           ]
