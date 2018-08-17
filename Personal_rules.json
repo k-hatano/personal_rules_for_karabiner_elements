@@ -104,6 +104,34 @@
       ]
     },
     {
+      "description": "Right Command + Esc -> Sleep",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "escape",
+            "modifiers": {
+              "mandatory": [
+                "right_command"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "eject",
+              "modifiers": [
+                "left_control",
+                "left_shift"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "Left Control + Middle Click -> Mission Control",
       "manipulators": [
         {
