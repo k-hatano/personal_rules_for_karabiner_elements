@@ -51,6 +51,31 @@
       ]
     },
     {
+      "description": "Right Command + Right Click -> Look Up Words (Preview Link on Safari, for trackpad)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "pointing_button": "button2",
+            "modifiers": {
+              "mandatory": [
+                "right_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "d",
+              "modifiers": [
+                "left_command",
+                "left_control"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "Right Command + Mouse Button 4, 5 -> Switch Tab",
       "manipulators": [
         {
@@ -120,7 +145,164 @@
               "modifiers": [
                 "left_control",
                 "fn"
+              ],
+              "repeat": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Right Option + Middle Click -> Move focus to active or next window",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "pointing_button": "button3",
+            "modifiers": {
+              "mandatory": [
+                "right_option"
+              ],
+              "optional": [
+                "any"
               ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f4",
+              "modifiers": [
+                "left_control",
+                "fn"
+              ],
+              "repeat": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Right Option only -> Move focus to status menus",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_option"
+          },
+          "to": [
+              {
+                  "key_code": "right_option",
+                  "lazy": true
+              }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "f8",
+              "modifiers": [
+                "left_control",
+                "fn"
+              ],
+              "repeat": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Right Shift + Middle Click -> Scroll to Top",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "pointing_button": "button3",
+            "modifiers": {
+              "mandatory": [
+                "right_shift"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "home"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Right Shift + Mouse Button 4, 5 -> Go Back or Forward (supports JIS keyboard only)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "pointing_button": "button4",
+            "modifiers": {
+              "mandatory": [
+                "right_shift"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "close_bracket",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "pointing_button": "button5",
+            "modifiers": {
+              "mandatory": [
+                "right_shift"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "backslash",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Right Shift only -> Move focus to Dock",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_shift"
+          },
+          "to": [
+              {
+                  "key_code": "right_shift",
+                  "lazy": true
+              }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "f3",
+              "modifiers": [
+                "left_control",
+                "fn"
+              ],
+              "repeat": false
             }
           ]
         }
