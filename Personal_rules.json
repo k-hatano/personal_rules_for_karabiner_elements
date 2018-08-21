@@ -153,7 +153,7 @@
       ]
     },
     {
-      "description": "Right Option + Middle Click -> Move focus to active or next window",
+      "description": "Right Option + Middle Click -> Scroll to Top",
       "manipulators": [
         {
           "type": "basic",
@@ -170,62 +170,6 @@
           },
           "to": [
             {
-              "key_code": "f4",
-              "modifiers": [
-                "left_control",
-                "fn"
-              ],
-              "repeat": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Right Option only -> Move focus to status menus",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "right_option"
-          },
-          "to": [
-              {
-                  "key_code": "right_option",
-                  "lazy": true
-              }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "f8",
-              "modifiers": [
-                "left_control",
-                "fn"
-              ],
-              "repeat": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Right Shift + Middle Click -> Scroll to Top",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "pointing_button": "button3",
-            "modifiers": {
-              "mandatory": [
-                "right_shift"
-              ],
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
               "key_code": "home"
             }
           ]
@@ -233,7 +177,7 @@
       ]
     },
     {
-      "description": "Right Shift + Mouse Button 4, 5 -> Go Back or Forward (supports JIS keyboard only)",
+      "description": "Right Option + Mouse Button 4, 5 -> Go Back or Forward (supports JIS keyboard only)",
       "manipulators": [
         {
           "type": "basic",
@@ -241,7 +185,7 @@
             "pointing_button": "button4",
             "modifiers": {
               "mandatory": [
-                "right_shift"
+                "right_option"
               ],
               "optional": [
                 "any"
@@ -263,7 +207,7 @@
             "pointing_button": "button5",
             "modifiers": {
               "mandatory": [
-                "right_shift"
+                "right_option"
               ],
               "optional": [
                 "any"
@@ -282,16 +226,16 @@
       ]
     },
     {
-      "description": "Right Shift only -> Move focus to Dock",
+      "description": "Right Option only -> Move focus to Dock",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "right_shift"
+            "key_code": "right_option"
           },
           "to": [
               {
-                  "key_code": "right_shift",
+                  "key_code": "right_option",
                   "lazy": true
               }
           ],
