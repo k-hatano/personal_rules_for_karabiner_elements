@@ -126,6 +126,144 @@
       ]
     },
     {
+      "description": "Right Command (+ Right Option to accelerate) + Arrow Keys -> Scroll",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "up_arrow",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "mouse_key": { "vertical_wheel": -64.0 }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "down_arrow",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "mouse_key": { "vertical_wheel": 64.0 }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_arrow",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "mouse_key": { "horizontal_wheel": 64.0 }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_arrow",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "mouse_key": { "horizontal_wheel": -64.0 }
+            }
+          ]
+        },
+
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "up_arrow",
+            "modifiers": {
+              "mandatory": [
+                "right_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "mouse_key": { "vertical_wheel": -32.0 }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "down_arrow",
+            "modifiers": {
+              "mandatory": [
+                "right_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "mouse_key": { "vertical_wheel": 32.0 }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_arrow",
+            "modifiers": {
+              "mandatory": [
+                "right_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "mouse_key": { "horizontal_wheel": 32.0 }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_arrow",
+            "modifiers": {
+              "mandatory": [
+                "right_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "mouse_key": { "horizontal_wheel": -32.0 }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "Right Command only -> Move focus to the menu bar",
       "manipulators": [
         {
