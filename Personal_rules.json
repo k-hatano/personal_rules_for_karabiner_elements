@@ -76,6 +76,73 @@
       ]
     },
     {
+      "description": "Right Command + Mouse Button 4, 5 -> Switch Sheet (for Apple Numbers, Microsoft Excel only)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "pointing_button": "button4",
+            "modifiers": {
+              "mandatory": [
+                "right_command"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "page_up",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.iWork\\.Numbers$",
+                "^com\\.microsoft\\.Excel$"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "pointing_button": "button5",
+            "modifiers": {
+              "mandatory": [
+                "right_command"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "page_down",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.iWork\\.Numbers$",
+                "^com\\.microsoft\\.Excel$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "Right Command + Mouse Button 4, 5 -> Switch Tab",
       "manipulators": [
         {
