@@ -337,6 +337,14 @@
                 "left_command"
               ]
             }
+          ],
+          "conditions": [
+            {
+              "type": "keyboard_type_if",
+              "keyboard_types": [
+                "jis"
+              ]
+            }
           ]
         },
         {
@@ -357,6 +365,14 @@
               "key_code": "backslash",
               "modifiers": [
                 "left_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "keyboard_type_if",
+              "keyboard_types": [
+                "jis"
               ]
             }
           ]
