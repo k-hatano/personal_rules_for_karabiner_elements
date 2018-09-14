@@ -2,12 +2,12 @@
   "title": "Personal_rules",
   "rules": [
     {
-      "description": "Mouse Button 5 -> Left Command + Left Shift + H (for iOS Simulator only)",
+      "description": "Middle Click -> Push Home Buton (for iOS Simulator only)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "pointing_button": "button5"
+            "pointing_button": "button3"
           },
           "to": [
             {
@@ -15,6 +15,55 @@
               "modifiers": [
                 "left_command",
                 "left_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.iphonesimulator$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Mouse Button 4, 5 -> Rotate Left or Right (for iOS Simulator only)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "pointing_button": "button4"
+          },
+          "to": [
+            {
+              "key_code": "left_arrow",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.iphonesimulator$"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "pointing_button": "button5"
+          },
+          "to": [
+            {
+              "key_code": "right_arrow",
+              "modifiers": [
+                "left_command"
               ]
             }
           ],
