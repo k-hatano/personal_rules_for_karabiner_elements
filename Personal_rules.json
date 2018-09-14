@@ -2,6 +2,59 @@
   "title": "Personal_rules",
   "rules": [
     {
+      "description": "Mouse Button 5 -> Left Command + Left Shift + H (for iOS Simulator only)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "pointing_button": "button5"
+          },
+          "to": [
+            {
+              "key_code": "h",
+              "modifiers": [
+                "left_command",
+                "left_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.iphonesimulator$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Right Command + Right Option + Mouse Button 4 -> Escape",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "pointing_button": "button4",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_option"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "escape"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "Right Command + Right Option + Mouse Button 5 -> Spacebar",
       "manipulators": [
         {
@@ -233,7 +286,7 @@
           },
           "to": [
             {
-              "mouse_key": { "vertical_wheel": -64.0 }
+              "mouse_key": { "vertical_wheel": -128.0 }
             }
           ]
         },
@@ -250,7 +303,7 @@
           },
           "to": [
             {
-              "mouse_key": { "vertical_wheel": 64.0 }
+              "mouse_key": { "vertical_wheel": 128.0 }
             }
           ]
         },
@@ -267,7 +320,7 @@
           },
           "to": [
             {
-              "mouse_key": { "horizontal_wheel": 64.0 }
+              "mouse_key": { "horizontal_wheel": 128.0 }
             }
           ]
         },
@@ -284,7 +337,7 @@
           },
           "to": [
             {
-              "mouse_key": { "horizontal_wheel": -64.0 }
+              "mouse_key": { "horizontal_wheel": -128.0 }
             }
           ]
         },
