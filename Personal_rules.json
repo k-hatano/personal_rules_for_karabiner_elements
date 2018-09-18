@@ -2,12 +2,55 @@
   "title": "Personal_rules",
   "rules": [
     {
-      "description": "Middle Click -> Push Home Buton (for iOS Simulator only)",
+      "description": "Right Command + Right Click -> Toggle Software Keyboard (for iOS Simulator only)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "pointing_button": "button3"
+            "pointing_button": "button2",
+            "modifiers": {
+              "mandatory": [
+                "right_command"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "k",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.iphonesimulator$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Right Command + Middle Click -> Push Home Buton (for iOS Simulator only)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "pointing_button": "button3",
+            "modifiers": {
+              "mandatory": [
+                "right_command"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
           },
           "to": [
             {
@@ -30,12 +73,20 @@
       ]
     },
     {
-      "description": "Mouse Button 4, 5 -> Rotate Left or Right (for iOS Simulator only)",
+      "description": "Right Command + Mouse Button 4, 5 -> Rotate Left or Right (for iOS Simulator only)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "pointing_button": "button4"
+            "pointing_button": "button4",
+            "modifiers": {
+              "mandatory": [
+                "right_command"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
           },
           "to": [
             {
@@ -57,7 +108,15 @@
         {
           "type": "basic",
           "from": {
-            "pointing_button": "button5"
+            "pointing_button": "button5",
+            "modifiers": {
+              "mandatory": [
+                "right_command"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
           },
           "to": [
             {
