@@ -2,6 +2,33 @@
   "title": "Personal_rules",
   "rules": [
     {
+      "description": "Middle Click -> Left Command + Left Click (for Xcode only)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "pointing_button": "button3"
+          },
+          "to": [
+            {
+              "pointing_button": "button1",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.dt\\.Xcode$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "Right Command + Right Click -> Toggle Software Keyboard (for iOS Simulator only)",
       "manipulators": [
         {
