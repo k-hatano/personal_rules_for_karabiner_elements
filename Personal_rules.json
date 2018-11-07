@@ -664,33 +664,6 @@
       ]
     },
     {
-      "description": "Right Command only -> Move focus to the menu bar",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "right_command"
-          },
-          "to": [
-              {
-                  "key_code": "right_command",
-                  "lazy": true
-              }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "f2",
-              "modifiers": [
-                "left_control",
-                "fn"
-              ],
-              "repeat": false
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "Right Option + Middle Click -> Scroll to Top",
       "manipulators": [
         {
@@ -873,6 +846,39 @@
               "key_code": "right_arrow",
               "modifiers": [
                 "left_control"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "description": "Right Command + Left Command -> Move focus to the menu bar",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "right_command"
+              },
+              {
+                "key_code": "left_command"
+              }
+            ],
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f2",
+              "modifiers": [
+                "left_control",
+                "fn"
               ]
             }
           ]
