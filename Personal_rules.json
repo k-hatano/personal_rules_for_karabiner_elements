@@ -409,6 +409,55 @@
       ]
     },
     {
+      "description": "Right Command + Mouse Button 4 + Mouse Button 5 -> Show All Tabs (for Safari only, and supports JIS keyboard only)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "pointing_button": "button4"
+              },
+              {
+                "pointing_button": "button5"
+              }
+            ],
+            "modifiers": {
+              "mandatory": [
+                "right_command"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "international3",
+              "modifiers": [
+                "left_command",
+                "left_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Safari$"
+              ]
+            },
+            {
+              "type": "keyboard_type_if",
+              "keyboard_types": [
+                "jis"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "Right Command + Mouse Button 4, 5 -> Switch Sheet (for Apple Numbers, Microsoft Excel only)",
       "manipulators": [
         {
@@ -852,7 +901,6 @@
         }
       ]
     },
-
     {
       "description": "Right Command + Left Command -> Move focus to the menu bar",
       "manipulators": [
