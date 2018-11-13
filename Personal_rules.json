@@ -802,33 +802,6 @@
       ]
     },
     {
-      "description": "Right Option only -> Move focus to Dock",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "right_option"
-          },
-          "to": [
-              {
-                  "key_code": "right_option",
-                  "lazy": true
-              }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "f3",
-              "modifiers": [
-                "left_control",
-                "fn"
-              ],
-              "repeat": false
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "Left Control + Middle Click -> Mission Control",
       "manipulators": [
         {
@@ -847,6 +820,40 @@
           "to": [
             {
               "key_code": "mission_control"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Left Control + Mouse Button 4 + Mouse Button 5 -> Show Desktop",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "pointing_button": "button4"
+              },
+              {
+                "pointing_button": "button5"
+              }
+            ],
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "mission_control",
+              "modifiers": [
+                "left_command"
+              ]
             }
           ]
         }
