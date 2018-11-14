@@ -737,6 +737,40 @@
       ]
     },
     {
+      "description": "Right Option + Mouse Button 4 + Mouse Button 5 -> Reload",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "pointing_button": "button4"
+              },
+              {
+                "pointing_button": "button5"
+              }
+            ],
+            "modifiers": {
+              "mandatory": [
+                "right_option"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "r",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "Right Option + Mouse Button 4, 5 -> Go Back or Forward (supports JIS keyboard only)",
       "manipulators": [
         {
