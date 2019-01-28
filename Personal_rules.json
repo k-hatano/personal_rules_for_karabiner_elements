@@ -713,6 +713,341 @@
       ]
     },
     {
+      "description": "Right Command (+ Right Option to accelerate) + Numeric Keys -> Mouse Key",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_1",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "mouse_key": { "x": -1024.0, "y": 1024.0 }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_2",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "mouse_key": { "y": 1024.0 }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_3",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "mouse_key": { "x": 1024.0, "y": 1024.0 }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_4",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "mouse_key": { "x": -1024.0 }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_6",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "mouse_key": { "x": 1024.0 }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_7",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "mouse_key": { "x": -1024.0, "y": -1024.0 }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_8",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "mouse_key": { "y": -1024.0 }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_9",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "mouse_key": { "x": 1024.0, "y": -1024.0 }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_5",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "pointing_button": "button2"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_0",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "pointing_button": "button2"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_1",
+            "modifiers": {
+              "mandatory": [
+                "right_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "mouse_key": { "x": -512.0, "y": 512.0 }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_2",
+            "modifiers": {
+              "mandatory": [
+                "right_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "mouse_key": { "y": 512.0 }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_3",
+            "modifiers": {
+              "mandatory": [
+                "right_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "mouse_key": { "x": 512.0, "y": 512.0 }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_4",
+            "modifiers": {
+              "mandatory": [
+                "right_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "mouse_key": { "x": -512.0 }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_6",
+            "modifiers": {
+              "mandatory": [
+                "right_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "mouse_key": { "x": 512.0 }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_7",
+            "modifiers": {
+              "mandatory": [
+                "right_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "mouse_key": { "x": -512.0, "y": -512.0 }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_8",
+            "modifiers": {
+              "mandatory": [
+                "right_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "mouse_key": { "y": -512.0 }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_9",
+            "modifiers": {
+              "mandatory": [
+                "right_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "mouse_key": { "x": 512.0, "y": -512.0 }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_5",
+            "modifiers": {
+              "mandatory": [
+                "right_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "pointing_button": "button1"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_0",
+            "modifiers": {
+              "mandatory": [
+                "right_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "pointing_button": "button1"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "Right Option + Middle Click -> Scroll to Top",
       "manipulators": [
         {
