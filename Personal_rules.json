@@ -854,7 +854,14 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "keypad_5",
+            "simultaneous": [
+              {
+                "key_code": "keypad_5"
+              },
+              {
+                "key_code": "keypad_0"
+              }
+            ],
             "modifiers": {
               "mandatory": [
                 "right_command",
@@ -871,6 +878,23 @@
         {
           "type": "basic",
           "from": {
+            "key_code": "keypad_5",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "pointing_button": "button1"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
             "key_code": "keypad_0",
             "modifiers": {
               "mandatory": [
@@ -881,7 +905,41 @@
           },
           "to": [
             {
+              "pointing_button": "button1"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_comma",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
               "pointing_button": "button2"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_period",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "pointing_button": "button3"
             }
           ]
         },
@@ -1016,6 +1074,29 @@
         {
           "type": "basic",
           "from": {
+            "simultaneous": [
+              {
+                "key_code": "keypad_5"
+              },
+              {
+                "key_code": "keypad_0"
+              }
+            ],
+            "modifiers": {
+              "mandatory": [
+                "right_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "pointing_button": "button2"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
             "key_code": "keypad_5",
             "modifiers": {
               "mandatory": [
@@ -1042,6 +1123,38 @@
           "to": [
             {
               "pointing_button": "button1"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_comma",
+            "modifiers": {
+              "mandatory": [
+                "right_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "pointing_button": "button2"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_period",
+            "modifiers": {
+              "mandatory": [
+                "right_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "pointing_button": "button3"
             }
           ]
         }
