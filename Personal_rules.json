@@ -1420,6 +1420,62 @@
           ]
         }
       ]
+    },
+    {
+      "description": "Right Command + Escape -> Move focus to the Status Bar",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "escape",
+            "modifiers": {
+              "mandatory": [
+                "right_command"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f8",
+              "modifiers": [
+                "left_control",
+                "fn"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Right Command + Tab -> Move focus to Dock",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "tab",
+            "modifiers": {
+              "mandatory": [
+                "right_command"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f3",
+              "modifiers": [
+                "left_control",
+                "fn"
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
