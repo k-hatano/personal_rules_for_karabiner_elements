@@ -1250,7 +1250,21 @@
           },
           "to": [
             {
-              "key_code": "mission_control"
+              "key_code": "left_control"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "mission_control",
+              "repeat": false,
+              "halt": true
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "spacebar",
+              "repeat": false,
+              "halt": true
             }
           ]
         }
