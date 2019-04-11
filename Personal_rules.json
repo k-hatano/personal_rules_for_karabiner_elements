@@ -285,56 +285,6 @@
       ]
     },
     {
-      "description": "Right Command + Right Option + Mouse Button 4 -> Escape",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "pointing_button": "button4",
-            "modifiers": {
-              "mandatory": [
-                "right_command",
-                "right_option"
-              ],
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "escape"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Right Command + Right Option + Mouse Button 5 -> Spacebar",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "pointing_button": "button5",
-            "modifiers": {
-              "mandatory": [
-                "right_command",
-                "right_option"
-              ],
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "spacebar"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "Right Command + Left Click -> Middle Click",
       "manipulators": [
         {
