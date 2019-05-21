@@ -1440,6 +1440,21 @@
           ]
         }
       ]
+    },
+    {
+      "description": "Right Command + Mouse Motion -> Scroll Wheel (Available since KE v12.2.6)",
+      "manipulators": [
+        {
+          "type": "mouse_motion_to_scroll",
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "right_command"
+              ]
+            }
+          }
+        }
+      ]
     }
   ]
 }
