@@ -2,12 +2,20 @@
   "title": "Personal_rules",
   "rules": [
     {
-      "description": "Mouse Button 4, 5 -> Go Back or Forward (for Visual Studio Code only, supports JIS keyboard only)",
+      "description": "Right Command + Mouse Button 4, 5 -> Go Back or Forward (for Visual Studio Code only, supports JIS keyboard only)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "pointing_button": "button4"
+            "pointing_button": "button4",
+            "modifiers": {
+              "mandatory": [
+                "right_command"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
           },
           "to": [
             {
@@ -29,7 +37,15 @@
         {
           "type": "basic",
           "from": {
-            "pointing_button": "button5"
+            "pointing_button": "button5",
+            "modifiers": {
+              "mandatory": [
+                "right_command"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
           },
           "to": [
             {
